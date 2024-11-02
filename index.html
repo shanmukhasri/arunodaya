@@ -10,17 +10,24 @@
 
 <body class="">
     <!-- Header with Tabs -->
-    <header class="relative p-4 bg-gray-800">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold text-white italic">ARUNODAYA MANOVIKASA KENDRAM</h1>
-            <nav class="flex space-x-4">
+    <header class="relative">
+        <div class="container flex items-center">
+            <img src="img/logo.jpeg" alt="Logo" class="h-auto w-40 pl-10">
+            <div class="flex flex-col items-center justify-center w-full pt-5 pb-5">
+                <h1 class="text-4xl font-bold text-center pl-10 text-center text-blue-600">ARUNODAYA MANOVIKASA KENDRAM
+                </h1>
+                <h2 class="font-semibold text-center pl-10 text-center">Special School for MENTALLY CHALLENGED CHILDRENS
+                </h2>
+            </div>
+
+            <!-- <nav class="flex space-x-4">
                 <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                     data-tab="home">Home</button>
                 <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                     data-tab="about">About</button>
                 <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                     data-tab="contact">Contact</button>
-            </nav>
+            </nav> -->
         </div>
     </header>
 
@@ -28,7 +35,7 @@
     <main class="bg-gray-200">
         <section id="home" class="tab-content block">
             <img src="img/hero.JPG" alt="Hero Image" class="w-full object-cover object-center mb-4">
-            <div class="grid grid-cols-4 gap-6">
+            <div class="grid lg:grid-cols-4 gap-6 sm:grid-row-4">
                 <div class="col-span-2 flex items-center justify-center p-5 h-screen">
                     <img src="img/hero2.JPG" alt="Hero Image" class="h-auto w-96">
                 </div>
@@ -82,75 +89,64 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-span-2 flex flex-col justify-center m-10 p-10 h-screen">
+                <div class="col-span-2 flex flex-col justify-center lg:m-10 lg:p-10 h-screen">
                     <img src="img/hero3.jpg" alt="Hero Image" class="w-auto h-auto">
                 </div>
             </div>
-            <div class="h-screen">
-                <div class="w-full text-center text-4xl font-semibold pb-10">Services Offered</div>
-                <div class="grid grid-row-3 grid-cols-4 items-center justify-center">
-                    <div
-                        class="grid grid-row-2 h-auto text-center font-semibold items-center justify-center">
-                        <div class="font-semibold">Yoga Therapy</div>
-                        <img src="img/yoga.JPG" class="w-44 h-auto rounded-xl shadow-md">
+            <div class="lg:h-screen">
+                <div class="w-full text-center text-4xl font-semibold pb-10 text-green-700">Services Offered</div>
+                <div class="lg:grid lg:grid-row-3 lg:grid-cols-4 sm:flex sm:flex-col justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
+                        <div class="font-bold text-pink-500">Yoga Therapy</div>
+                        <img src="img/yoga.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Behavior Therapy</div>
-                        <img src="img/behaviour_therapy.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/behaviour_therapy.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Medical Services</div>
-                        <img src="img/medical_services.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/medical_services.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Physiotherapy</div>
-                        <img src="img/physio.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/physio.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Special Education</div>
-                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Vocational Training</div>
-                        <img src="img/vocational.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/vocational.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold w-44">Prevention and early Identification of Disability symptoms</div>
-                        <img src="img/prevention.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/prevention.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Psychiatric Services</div>
-                        <img src="img/psychiatric.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/psychiatric.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Physiotherapy</div>
-                        <img src="img/psycological.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/psycological.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Special Education</div>
-                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
-                    <div
-                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                    <div class="grid grid-row-2 text-center font-semibold items-center justify-center gap-2 pb-5">
                         <div class="font-semibold">Parents Counseling</div>
-                        <img src="img/councelling.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                        <img src="img/councelling.JPG" class="w-44 h-auto rounded-xl shadow-md shadow-xl">
                     </div>
                 </div>
             </div>
-            <div class="h-screen">
+            <div class="h-screen bg-gray-200">
                 <!-- <div class="w-full p-10 text-center text-4xl font-semibold">Chairperson’s Voice</div> -->
                 <!-- <div class="grid grid-row-4 grid-cols-3 items-center justify-center"> -->
 
-                <div class="max-w-7xl mx-auto p-6 shadow-md rounded-lg mt-10 w-full">
+                <div class="max-w-7xl mx-auto p-6 shadow-md rounded-lg mt-10 w-full bg-gray-200">
                     <h1 class="text-3xl font-bold mb-4 text-center">Chairperson’s Voice</h1>
 
                     <p class="mb-4 font-mono">
@@ -160,7 +156,8 @@
                         no matter what, time keeps changing, and everything that happens does so for a reason.
                     </p>
 
-                    <blockquote class="quote text-xl text-center my-6 font-mono">"On this note, I would like to share one of
+                    <blockquote class="quote text-xl text-center my-6 font-mono">"On this note, I would like to share
+                        one of
                         my personal experiences of a dark night and how I came out of that bitter darkness to see a
                         brighter tomorrow."</blockquote>
 
@@ -207,7 +204,8 @@
                         once endured.
                     </p>
 
-                    <p class="text-center text-lg font-semibold italic mt-8 font-mono">"Sarve Jana Sukhinobhavanthu" – May all
+                    <p class="text-center text-lg font-semibold italic mt-8 font-mono">"Sarve Jana Sukhinobhavanthu" –
+                        May all
                         beings be happy.</p>
                 </div>
                 <!-- </div> -->
