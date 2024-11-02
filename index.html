@@ -1,69 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Organization - AWARD</title>
+    <title>Tailwind Tabs Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <!-- Header with Tabs -->
+    <header class="relative p-4 bg-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white italic">ARUNODAYA MANOVIKASA KENDRAM</h1>
+            <nav class="flex space-x-4">
+                <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                    data-tab="home">Home</button>
+                <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                    data-tab="about">About</button>
+                <button class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                    data-tab="contact">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pages Content -->
+    <main class="bg-gray-200">
+        <section id="home" class="tab-content block">
+            <img src="img/hero.jpg" alt="Hero Image" class="w-full object-cover object-center mb-4">
+            <div class="grid grid-cols-4 gap-6">
+                <div class="col-span-2 flex items-center justify-center p-5 h-screen">
+                    <img src="img/hero2.jpg" alt="Hero Image" class="h-auto w-96">
+                </div>
+                <div class="col-span-2 flex flex-col justify-center m-10 p-10">
+                    <div class="text-4xl pb-10 font-semibold">
+                        <h1 class="text-3xl font-bold mb-4 text-center text-green-700">About the Organization</h1>
+                    </div>
+                    <div class="text-2xl text font-light font-mono">
+                        <p class="text-lg mb-4">
+                            <strong class="text-green-700">Association for Welfare And Comprehensive Rural Development
+                                (AWARD)</strong> is a registered nonprofit organization dedicated to the welfare of
+                            individuals with developmental disabilities.
+                        </p>
+
+                        <p class="text-lg mb-4">
+                            Our focus is on providing <strong class="text-green-700">special education</strong> for
+                            children with developmental disabilities such as <span class="text-green-900">Cerebral
+                                Palsy, Down's Syndrome, Autism,</span> and <span class="text-green-900">Mental
+                                Challenges</span>.
+                        </p>
+
+                        <p class="text-lg mb-4">
+                            Currently, over <strong class="text-green-700">40+ children</strong> are benefitting from
+                            various therapy services provided through our school program.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-2 flex flex-col items-center justify-center p-5">
+                    <div class="text-4xl pb-10 w-full font-semibold">
+                        <h1 class="text-3xl font-bold mb-4 text-center text-indigo-700">Organization’s Motto</h1>
+                    </div>
+                    <div class="text-2xl text font-light font-mono">
+                        <p class="text-lg mb-4">
+                            Our motto is to <strong class="text-indigo-700">raise awareness</strong> in society about
+                            the challenges faced by special children due to various socio-economic factors.
+                        </p>
+
+                        <p class="text-lg mb-4">
+                            We extend our hands to <strong class="text-indigo-700">support</strong> these children in
+                            every possible way, empowering them to live independently and with dignity.
+                        </p>
+
+                        <p class="text-lg mb-4">
+                            We give voice to their <strong class="text-indigo-700">rights</strong>, becoming their
+                            wings, allowing them to soar and pursue their dreams.
+                        </p>
+
+                        <p class="text-lg text-center font-semibold italic text-indigo-700 mt-8">
+                            “We see them as <span class="text-indigo-900">differently abled</span>, not disabled,
+                            because they are <span class="text-indigo-900">Special</span>.”
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-2 flex flex-col justify-center m-10 p-10 h-screen">
+                    <img src="img/hero3.jpg" alt="Hero Image" class="w-auto h-auto">
+                </div>
+            </div>
+            <div class="h-screen">
+                <div class="w-full text-center text-4xl font-semibold pb-10">Services Offered</div>
+                <div class="grid grid-row-3 grid-cols-4 items-center justify-center">
+                    <div
+                        class="grid grid-row-2 h-auto text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Yoga Therapy</div>
+                        <img src="img/yoga.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Behavior Therapy</div>
+                        <img src="img/behaviour_therapy.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Medical Services</div>
+                        <img src="img/medical_services.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Physiotherapy</div>
+                        <img src="img/physio.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Special Education</div>
+                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Vocational Training</div>
+                        <img src="img/vocational.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold w-44">Prevention and early Identification of Disability symptoms</div>
+                        <img src="img/prevention.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Psychiatric Services</div>
+                        <img src="img/psychiatric.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Physiotherapy</div>
+                        <img src="img/psycological.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Special Education</div>
+                        <img src="img/special_education.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                    <div
+                        class="grid grid-row-2 h-auto pb-10 text-center font-semibold items-center justify-center">
+                        <div class="font-semibold">Parents Counseling</div>
+                        <img src="img/councelling.JPG" class="w-44 h-auto rounded-xl shadow-md">
+                    </div>
+                </div>
+            </div>
+            <div class="h-screen">
+                <!-- <div class="w-full p-10 text-center text-4xl font-semibold">Chairperson’s Voice</div> -->
+                <!-- <div class="grid grid-row-4 grid-cols-3 items-center justify-center"> -->
+
+                <div class="max-w-7xl mx-auto p-6 shadow-md rounded-lg mt-10 w-full">
+                    <h1 class="text-3xl font-bold mb-4 text-center">Chairperson’s Voice</h1>
+
+                    <p class="mb-4 font-mono">
+                        Life is so beautiful and precious. Like how the day and night come along one after the
+                        other, in life, beautiful times and bad times come along. We shouldn’t lose hope and faith
+                        in ourselves to come over our bad times to see a beautiful tomorrow. One thing is for sure:
+                        no matter what, time keeps changing, and everything that happens does so for a reason.
+                    </p>
+
+                    <blockquote class="quote text-xl text-center my-6 font-mono">"On this note, I would like to share one of
+                        my personal experiences of a dark night and how I came out of that bitter darkness to see a
+                        brighter tomorrow."</blockquote>
+
+                    <p class="mb-4 font-mono">
+                        Many years ago, my life took an unexpected turn with the birth of my son. Like any other
+                        parents, we were basking in joy with our newborn, only to be told by the doctors that our
+                        baby was not typical. Our son was diagnosed with
+                        <strong>Cerebral Palsy</strong> and declared <strong>Partially Sightless</strong> with
+                        <strong>Nystagmus</strong> and <strong>Corneal Opacity</strong>. At just 19, my ordinary
+                        world was plunged into darkness. I struggled to even understand what the doctors were
+                        saying, let alone pronounce those unfamiliar terms.
+                    </p>
+
+                    <p class="mb-4 font-mono">
+                        Each passing day brought two realities: my baby’s condition and society’s harsh response.
+                        Unfortunately, his condition worsened, and I found myself helpless. Although he is no longer
+                        with us, my son gave me a profound purpose. In his memory,
+                        <strong>“Arunodaya Mano Vikas Kendram”</strong> was born in 1994, in association with the
+                        <strong>Association for Welfare and Comprehensive Rural Development (AWARD)</strong>.
+                    </p>
+
+                    <!-- <h2 class="text-2xl font-semibold mt-6 mb-4">A Journey of Recovery and Learning</h2> -->
+
+                    <p class="mb-4 font-mono">
+                        Recovery was a slow, challenging process. During this time, I saw other families enduring
+                        similar pain. I realized the lack of public awareness about these conditions and the social
+                        stigma against children with special needs. Determined to make a difference, I resumed my
+                        studies, which had been interrupted by marriage, and joined the <strong>Thakur Hari Prasad
+                            Institute of Research and Rehabilitation for the Mentally Handicapped</strong> in
+                        Rajahmundry.
+                    </p>
+
+                    <p class="mb-4 font-mono">
+                        I completed a diploma course in Mental Retardation (D.S.E - MR) and continuously updated my
+                        knowledge through various seminars and workshops, including those hosted by the
+                        <strong>National Institute for the Mentally Handicapped – Secunderabad</strong>,
+                        <strong>Community-Based Rehabilitation (CBR) at Rastriya Seva Samiti (RASS) –
+                            Tirupati</strong>, and disability rights initiatives by the <strong>Ministry of Social
+                            Justice & Empowerment, Government of India</strong>.
+                    </p>
+
+                    <p class="mb-4 font-mono">
+                        My sole purpose is to support special children and their families, sparing them the pain I
+                        once endured.
+                    </p>
+
+                    <p class="text-center text-lg font-semibold italic mt-8 font-mono">"Sarve Jana Sukhinobhavanthu" – May all
+                        beings be happy.</p>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <section id="about" class="tab-content hidden">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p>Learn more about our mission, vision, and values on this page.</p>
+        </section>
+
+        <section id="contact" class="tab-content hidden">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p>Get in touch with us through the contact page. We’d love to hear from you!</p>
+        </section>
+    </main>
+
+    <!-- JavaScript for Tab Switching -->
+    <script>
+        document.querySelectorAll(".tab-link").forEach(button => {
+            button.addEventListener("click", () => {
+                const tab = button.getAttribute("data-tab");
+
+                // Toggle active state for tabs
+                document.querySelectorAll(".tab-link").forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                // Show active tab content and hide others
+                document.querySelectorAll(".tab-content").forEach(content => {
+                    content.classList.add("hidden");
+                });
+                document.getElementById(tab).classList.remove("hidden");
+            });
+        });
+
+
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2E8B57;
-        }
-        p {
-            margin: 15px 0;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
+        /* Custom styles for active tab */
+        .tab-link.active {
+            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
-</head>
-<body>
-
-    <div class="section">
-        <h1>About the Organization</h1>
-        <p>Association for Welfare And Comprehensive Rural Development (AWARD) is a registered nonprofit Organization working for the welfare of individuals with developmental disabilities. Our focus is to provide special education for children with developmental disabilities such as Cerebral Palsy, Down's Syndrome, Autism, and mental challenges. Over 40+ children are currently availing various therapy services offered by the Society through its school program – “Arunodaya Mano Vikasa Kendram” located near Pedaamiram village, Bhimavaram (Rural) Mandal, West Godavari District, Andhra Pradesh – 534204.</p>
-    </div>
-
-    <div class="section">
-        <h2>Organization’s Motto</h2>
-        <p>Our motto is to bring awareness to society regarding the difficulties faced by special children due to various socio-economic reasons. We extend our hands to support them in every possible way to lead their lives with dignity. We give voice to their rights and become their wings, allowing them to fly high and achieve their dreams. We see them as differently-abled, not disabled, because they are Special.</p>
-    </div>
-
-    <div class="section">
-        <h2>Services Offered</h2>
-        <p>We offer the following services and extend special care to each individual based on their needs:</p>
-        <ul>
-            <li>Prevention and early identification of disability symptoms</li>
-            <li>Psychological assessment and diagnostic service</li>
-            <li>Physiotherapy</li>
-            <li>Psychiatric services</li>
-            <li>Special education</li>
-            <li>Parents counseling</li>
-            <li>Yoga therapy</li>
-            <li>Behavior therapy</li>
-            <li>Follow-up services</li>
-            <li>Vocational training</li>
-            <li>Medical services</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Chairperson’s Voice</h2>
-        <p>Life is so beautiful and precious. Like how day and night come along one after the other, in life, beautiful times and bad times come along. We shouldn’t lose hope and faith in ourselves to overcome our bad times to see a beautiful tomorrow. One thing is for sure: whatever happens, happens for a good cause.</p>
-
-        <p>On this note, I would like to share one of my personal experiences during a dark period in my life. Many years ago, my life took an unexpected turn with the birth of my son. Like any other parents, we were enjoying the heights of happiness with our newborn baby, only to suddenly learn from the doctors that the baby was not typical. He was diagnosed with “Cerebral Palsy” and declared “Partially Sightless” with “Nystagmus” and “Corneal Opacity.” At 19 years of age, my ordinary world suddenly tumbled into darkness. Not understanding what the doctors were saying, I struggled with the unfamiliar terms. Each passing day revealed two harsh realities: the baby’s condition and the societal stigma that came with it. Sadly, my son’s condition deteriorated, and he is no longer with us today. However, he showed me the purpose of my life and paved the path for my future, leading to the establishment of “Arunodaya Mano Vikasa Kendram” in 1994 in association with AWARD (Association for Welfare and Comprehensive Rural Development).</p>
-
-        <p>It took months for me to recover, and during that time, I encountered several other families facing the same pain. I noticed a severe lack of awareness about disabilities in the public and a troubling social stigma toward these special children. Driven by a desire to support special children and their families, I resumed my studies after marriage, joined the Thakur Hari Prasad Institute of Research and Rehabilitation for the Mentally Handicapped in Rajahmundry, and completed a diploma course in Mental Retardation (D.S.E - MR). Over the years, I continued updating myself on scientific approaches in this field by attending seminars organized by institutions like the National Institute for the Mentally Handicapped, Secunderabad, and others. My only motto here is to support special children and their families so they do not experience the pain I once endured. "Sarve Jana Sukhinobhavanthu."</p>
-    </div>
-
 </body>
+
 </html>
